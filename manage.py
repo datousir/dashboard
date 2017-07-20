@@ -132,10 +132,10 @@ def db_rebuild():
 
     # print results
     inspector = db.inspect(db.engine)
-    print 'The following tables were created.'
-    print '-'*17
+    print('The following tables were created.')
+    print('-'*17)
     for table in inspector.get_table_names():
-        print table
+        print(table)
 
 
 @manager.command
